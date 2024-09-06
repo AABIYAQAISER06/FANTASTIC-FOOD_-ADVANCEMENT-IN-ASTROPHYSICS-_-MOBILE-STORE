@@ -1,0 +1,553 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+<title>Readme zur Circuit Design Suite 11.0.2 f&uuml;r Windows</title>
+<style type="text/css">
+/***************************************************/
+/* MINIMAL STYLES */
+/* The following section defines styles that every HTML Help project should need. */
+
+/* Specifies White Background color */
+body {background-color:#ffffff}
+
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+P { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color: #000000; }
+
+BR { font-size:4.00pt; }
+
+H1,H2,H3,H4,H5,H6 { color:#000000 }
+
+/* Use H1 for all topic headings. */
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:12pt; font-weight:bold;  }
+
+/* Use H2 for second-level headings. */
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:10pt; font-weight:bold;  }
+
+/* Use H3 for third-level headings. */
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* Use H4 for fourth-level headings. */
+H4 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+H5 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+H6 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* Use the Body style class for normal paragraphs. */
+P.Body { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the Anchor style class for graphic references on a line by themselves. */
+P.Anchor { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:10pt; color:#000000;  }
+
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use to start the new paragraph within the same set of tags. If you need to indent a list within another list, nest the indented list within the first list's set of or tags. */
+P.Indent1 { margin-left:12.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent2 { margin-left:24.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent3 { margin-left:36.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the LI style for all list items. */
+LI { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000; }
+
+
+
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+OL { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+ol ol {list-style-type:lower-alpha}
+ol ol ol {list-style-type:decimal}
+ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+OL.EquationNum { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+OL.List-abc { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type:lower-alpha; }
+
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+UL { margin-left:12.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;}
+
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+UL.List-Box { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: square; }
+
+
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+Table.Borderless { border:none; }
+
+/* Use the Bordered style class for tables that need borders. */
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+
+/* Use the Borderless-Wide style class for tables that do not need borders and that you want to stretch to fill the entire topic width. */
+Table.Borderless-Wide { border:none; width:100%; }
+
+/* Use the Bordered-Wide style class for tables that need borders and that you want to stretch to fill the entire topic width. */
+Table.Bordered-Wide { border-width: 1pt; border-style: solid; border-color: #000000; width:100%; border-collapse: collapse; }
+
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+TD { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; padding:3px; }
+
+/* Use the Bordered style class for table cells in Bordered or Bordered-Wide tables. */
+TD.Bordered { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+TD.Icon { width:40px; vertical-align:top; }
+
+/* Use the Table-cell-8pt style class for table cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TD.Table-cell-8pt { font-family:Verdana; font-size:7pt; color:#000000;  }
+
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+TH { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; }
+
+/* Use the Bordered style class for table heading cells in Bordered or Bordered-Wide tables. */
+TH.Bordered { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold;  border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Table-cell-8pt style class for table heading cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TH.Table-Head-8pt { font-family:Verdana; font-size:7pt; color:#000000; font-weight:bold; }
+
+/* Use the Left-Align style class for table heading cells that you want to left align instead of center align. */
+TH.Left-Align { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; text-align:left; }
+
+/***************************************************/
+/* CHARACTER FORMATS */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* Use the Dark-Red format for warnings or cautions. */
+#Dark-Red { color: #800000 }
+
+/* Use the Monospace format for code or syntax examples. */
+#Monospace { font-family: Courier New; font-size: 8pt; }
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+#Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+#Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style: italic; }
+
+/* Use the Platform format to denote a specific platform. */
+#Platform { color: #0000FF; font-weight: bold; }
+
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+#Symbol { font-family: Symbol; font-size: 8pt; }
+
+/* The following styles define the color of links. */
+a:link { color: #007700 }
+a:hover { color: #FF0000 }
+a:active { color: #FF0000 }
+a:visited { color: #7F007F }
+
+/***************************************************/
+/* ACTIVITY STYLES */
+/* The following section defines styles that only tutorial-style HTML Help projects should need. */
+
+/* Use the Activity-Objective style class for the objective at the beginning of an activity topic. */
+H3.Activity-Objective { color: #800000; }
+
+/***************************************************/
+/* CODE STYLES */
+/* The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+
+/***************************************************/
+/* FUNCTION STYLES */
+/* The following section defines styles that you might need to format function reference help. */
+
+P.F-VI-Code4 { margin-left:48.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Code5 { margin-left:60.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Equation { margin-top:9.00pt; margin-bottom:9.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+OL.F-VI-EquationNum { margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+</style>
+</head>
+
+<body>
+
+<h1>Readme zur NI Circuit Design Suite 11.0.2 f&uuml;r Windows</h1>
+
+<p class="Body">April 2011</p>
+
+
+<p class="Body">Diese Datei enth&auml;lt wichtige Last-Minute-Informationen zur Circuit Design Suite 11.0.2 f&uuml;r Windows, darunter Hinweise zu Installations- und Kompatibilit&auml;tsproblemen, behobenen Programmfehlern sowie &Auml;nderungen seit der Circuit Design Suite 11.0. Eine vollst&auml;ndige Liste aller neuen Funktionen der Circuit Design Suite finden Sie in den <em>Versionshinweisen zur NI Circuit Design Suite</em>. Zum &Ouml;ffnen dieses Dokuments klicken Sie in Multisim oder Ultiboard auf <strong>Hilfe&raquo;Versionshinweise</strong> oder im Windows-Startmen&uuml; auf <strong>Alle Programme&raquo;National Instruments&raquo;Circuit Design Suite 11.0&raquo;Documentation&raquo;Versionshinweise</strong>.</p>
+
+<p>Informationen zum Umgang mit der Circuit Design Suite finden Sie in der Brosch&uuml;re <em>Erste Schritte mit der NI Circuit Design Suite</em>. Zum &Ouml;ffnen der PDF-Datei klicken Sie im Windows-Startmen&uuml; auf <strong>Alle Programme&raquo;National Instruments&raquo;Circuit Design Suite 11.0&raquo;Documentation&raquo;Erste Schritte</strong>.</p>
+
+<p class="Body">
+<a href="#platforms">Unterst&uuml;tzte Betriebssysteme</a><br /> <a href="#install">Installation Circuit Design Suite 11.0.2</a><br /> <a href="#known">Bekannte Probleme</a><br /> <a href="#bug_fixes">Behobene Programmfehler</a><br /> <a href="#newcomponents">Neue Bauelemente</a><br/>
+</p>
+
+<h2><a id="platforms">Unterst&uuml;tzte Plattformen</a></h2>
+<p class="Body">Die Circuit Design Suite 11.0.2 unterst&uuml;tzt Windows Vista/XP (32 Bit), Windows 7/Vista (32 und 64 Bit), Windows Server 2003 R2 (32 Bit) und Windows Server 2008 R2 (64 Bit). Die Circuit Design Suite 11.0.2 l&auml;uft nicht unter Windows NT/Me/98/95/2000, Windows XP x64 oder anderen Windows-Server-Versionen als R2.</p>
+
+<h2><a id="install">Installieren der Circuit Design Suite 11.0.2</a></h2>
+
+<h3>Installation mehrerer Versionen</h3>
+
+<p class="Body">Die Circuit Design Suite 11.0.2 ist ein Upgrade der Circuit Design Suite 11.0. Das hei&szlig;t, die Circuit Design Suite 11.0.2 kann nicht zusammen mit der Version 11.0 auf demselben System installiert werden. Nach dem Installieren des Upgrades m&uuml;ssen Sie die Circuit Design Suite erneut aktivieren. Sie wird nicht automatisch aktiviert.
+</p>
+
+<h3>Installieren der Circuit Design Suite im Hintergrund</h3>
+
+<p class="Body">Die Circuit Design Suite kann so installiert werden, dass das Installationsprogramm nicht angezeigt wird. Informationen zur Installation des Programms im Hintergrund finden Sie in der Datei <span id="Monospace">silent_install.txt</span> im Verzeichnis <span id="Monospace">Supportfiles</span>.</p>
+
+<h3>Archivierung von Datenbanken der Circuit Design Suite</h3>
+<p class="Body">Es wird empfohlen, bei der Arbeit mit Multisim oder Ultiboard regelm&auml;&szlig;ig Sicherungskopien von den erstellten Dateien anzulegen. Dar&uuml;ber hinaus sollten alle programminternen Dateien gesichert werden, die vom Benutzer regelm&auml;&szlig;ig erg&auml;nzt werden (z. B. Datenbanken). Welche Dateien gesichert werden sollten und wo sich die betreffenden Dateien befinden, erfahren Sie in der Hilfe.</p>
+
+<h3>Deinstallation</h3>
+
+<p class="Body">Bei der Deinstallation der Circuit Design Suite werden keine Nutzerdaten entfernt. Wo sich die Datenbanken und Konfigurationsdateien befinden, die vom Benutzer ge&auml;ndert werden k&ouml;nnen, erfahren Sie in der Hilfe unter &quot;Archiving Data&quot;.</p>
+
+<h2><a id="known">Bekannte Probleme</a></h2>
+
+<h3>LabVIEW</h3>
+
+<ul>
+<li>Damit bestimmte LabVIEW-Funktionen (wie Instrumente oder Graphinterpolation) funktionieren, darf der Installationspfad keine unzul&auml;ssigen Zeichen enthalten. Siehe dazu die Einstellung &quot;Sprache f&uuml;r Programme, die Unicode nicht unterst&uuml;tzen&quot;, die unter <strong>Start&raquo;Systemsteuerung&raquo;Regions- und Sprachoptionen</strong> auf der Registerkarte <strong>Erweitert</strong> abgefragt werden kann. Unter Windows Vista wird die Sprache auf der Registerkarte <strong>Verwaltung</strong> unter &quot;Aktuelle Sprache f&uuml;r Programme, die Unicode nicht unterst&uuml;tzen&quot; angezeigt. Die LabVIEW-Komponenten funktionieren nur f&uuml;r Unicode-Zeichen, die dieser Sprache entsprechen. </li>
+</ul>
+
+<h3>Windows Vista</h3>
+<ul>
+<li>Die Circuit Design Suite 11.0.2 kann nicht auf der Starter-Edition von Windows Vista installiert werden.</li>
+</ul>
+
+<h3>Circuit Design Suite</h3>
+<ul>
+<li>Wenn Multisim oder Ultiboard &uuml;ber einen l&auml;ngeren Zeitraum hinweg genutzt wird, kommt es bei der Vergabe von GDI-Ressourcen-Handles zu einem Speicherleck, infolge dessen das Programm fehlerhaft arbeitet oder abst&uuml;rzt. Das Problem tritt bei MFC-Anwendungen auf, die auf Windows XP SP2 und Windows Server 2003 ausgef&uuml;hrt werden. Weitere Informationen und Hinweise zur Vermeidung des Problems finden Sie im Artikel <a href="http://digital.ni.com/public.nsf/allkb/E7EC0475F3B2022F8625741A006B4879">KB 4JREGSXL: Multisim or Ultiboard Leaking GDI Resource Handles</a>.</li>
+<li>Der Summer in Multisim erzeugt auf der 64-Bit-Version von Windows Vista und Windows XP keinen Ton. Das liegt daran, dass diese Windows-Versionen den Signalton (&quot;Beep&quot;) nicht unterst&uuml;tzen. Der Signalton wird jedoch zum Erzeugen des Summertons ben&ouml;tigt.</li>
+<li>Drucktaster, die als zweipolige Einschalter fungieren, k&ouml;nnen Konvergenzfehler hervorrufen, wenn Pins dieser Einschalter nicht verdrahtet sind. Zur Vermeidung dieser Fehler sollten alle offenen Pins mit Masse verbunden werden.</li>
+<li>Knotennamen mit den Zeichen &quot;/&quot;, &quot;\&quot; und &quot;+&quot; funktionieren im Postprozessor nicht. Sie k&ouml;nnen dieses Problem umgehen, indem Sie Ihre bevorzugten Netznamen so w&auml;hlen, dass sie diese Zeichen nicht enthalten.</li>
+
+</ul>
+
+
+
+<h2><a id="bug_fixes">Behobene Fehler</a></h2>
+<p class="Body">In der folgenden Tabelle werden die wichtigsten Probleme mit der Circuit Design Suite 11.0 beschrieben, die in 11.0.1 behoben wurden.</p>
+<table class="Bordered">
+<span class="DNL">
+<tr><td class="Bordered" colspan="2"><strong>Multisim ( 112 ) </strong></td></tr>
+<tr><th class="Bordered">Bug ID</th><th class="Bordered">Description</th></tr>
+<tr><td class="Bordered">108322</td><td class="Bordered">Cannot click finish in MCU wizard if the project type is load external hex file.</td></tr>
+
+<tr><td class="Bordered">109518</td><td class="Bordered">Two layers can improperly end up with the same layer name in some cases.</td></tr>
+<tr><td class="Bordered">111245</td><td class="Bordered">The pin mapping for the VGM96VC is incomplete.</td></tr>
+<tr><td class="Bordered">111336</td><td class="Bordered">Undo and Redo menu items are not translated in the Symbol Editor / Title Block Editor.</td></tr>
+<tr><td class="Bordered">111614</td><td class="Bordered">Convergence Assistant doesn't use LabVIEW or ELVIS instruments.</td></tr>
+<tr><td class="Bordered">112376</td><td class="Bordered">Printing an instrument over a wireless network takes a long time in some cases.</td></tr>
+<tr><td class="Bordered">112563</td><td class="Bordered">Word generator properties window resizes itself when changing display format.</td></tr>
+
+<tr><td class="Bordered">112599</td><td class="Bordered">Rated LEDs have unrealistic parameters.</td></tr>
+<tr><td class="Bordered">113343</td><td class="Bordered">The Temperature parameter in the resistor property pages does not validate out-of-range values correctly in some cases.</td></tr>
+<tr><td class="Bordered">113500</td><td class="Bordered">Agilent function generator does not model 50 ohm output impedence correctly.</td></tr>
+<tr><td class="Bordered">113509</td><td class="Bordered">Agilent oscilloscope vertical zoom can go up to 1nV/div.</td></tr>
+<tr><td class="Bordered">114056</td><td class="Bordered">Goto location generated by confirming virtual connection is static.</td></tr>
+<tr><td class="Bordered">114477</td><td class="Bordered">Footprint mapping for ADG413BRZ is incorrect.</td></tr>
+
+<tr><td class="Bordered">114874</td><td class="Bordered">spreadsheet results tab go to arrows are out of sync with the circuit after a replace by HB operation.</td></tr>
+<tr><td class="Bordered">114972</td><td class="Bordered">The shortcut key Ctrl-F does not open the find dialog window in the Description box editor.</td></tr>
+<tr><td class="Bordered">115056</td><td class="Bordered">Analysis dialog should not allow selecting duplicate device/model parameters.</td></tr>
+<tr><td class="Bordered">115143</td><td class="Bordered">Labview intrument Signal Analyzer is not saving Interpolation Method.</td></tr>
+<tr><td class="Bordered">115148</td><td class="Bordered">Labview Microphone doesn't save or copy its Sample Rate setting.</td></tr>
+<tr><td class="Bordered">115833</td><td class="Bordered">Schematic does not refresh correctly after closing the symbol/title block editor.</td></tr>
+
+<tr><td class="Bordered">115869</td><td class="Bordered">Moving a group of components where no autowire is needed still causes autowiring.</td></tr>
+<tr><td class="Bordered">115936</td><td class="Bordered">Multisim allows renaming components when the schematic is read only.</td></tr>
+<tr><td class="Bordered">115938</td><td class="Bordered">Nets can be renamed if the read-only property is set on the schematic.</td></tr>
+<tr><td class="Bordered">115942</td><td class="Bordered">Disabling Instruments toolbar in Circuit Restrictions prevents components from being placed from In-use list.</td></tr>
+<tr><td class="Bordered">115960</td><td class="Bordered">MOSFET DEFAS instance parameter not saved.</td></tr>
+<tr><td class="Bordered">115985</td><td class="Bordered">GRAPH_LCD* Display components are almost impossible to read given the color choices.</td></tr>
+
+<tr><td class="Bordered">116077</td><td class="Bordered">Refdes with underscores truncated after cut and paste.</td></tr>
+<tr><td class="Bordered">116222</td><td class="Bordered">PWL source does not generate error if external file does not exist.</td></tr>
+<tr><td class="Bordered">116241</td><td class="Bordered">Deleting a model from the User database eventually causes error in "Edit Model" dialog.</td></tr>
+<tr><td class="Bordered">116247</td><td class="Bordered">Integration method is being translated before passed to simulator.</td></tr>
+<tr><td class="Bordered">116277</td><td class="Bordered">Lock Subsheets option disables Copy and Cut tasks.</td></tr>
+<tr><td class="Bordered">116336</td><td class="Bordered">Forward annotating does not remove unused component after change to multisection component.</td></tr>
+
+<tr><td class="Bordered">116395</td><td class="Bordered">Bus IO and offpage connectors do not stay connected to bus after rotating.</td></tr>
+<tr><td class="Bordered">116422</td><td class="Bordered">Oscilloscope Trigger Type Buttons names are truncated.</td></tr>
+<tr><td class="Bordered">116486</td><td class="Bordered">Connecting a component to pins in Ultiboard will not correctly backannotate when it is in a hierarchical block.</td></tr>
+<tr><td class="Bordered">116517</td><td class="Bordered">The function generator instrument does not respect setting changes made during simulation when connected in certain configurations.</td></tr>
+<tr><td class="Bordered">116520</td><td class="Bordered">Function generator LabVIEW instrument repeat button is broken.</td></tr>
+<tr><td class="Bordered">116539</td><td class="Bordered">Instance footprint mapping does not update schematic.</td></tr>
+
+<tr><td class="Bordered">116559</td><td class="Bordered">Physical constants return zero for analyses.</td></tr>
+<tr><td class="Bordered">116587</td><td class="Bordered">Moving component in Database Manager changes component name.</td></tr>
+<tr><td class="Bordered">116625</td><td class="Bordered">Disabling the NI ELVISmx Arbitrary Waveform Generator output signal while simulating will crash multisim.</td></tr>
+<tr><td class="Bordered">116631</td><td class="Bordered">Connector name should be allowed to be the same as another component.</td></tr>
+<tr><td class="Bordered">116634</td><td class="Bordered">dBm Measurement in the Spectrum Analyzer is  incorrect.</td></tr>
+<tr><td class="Bordered">116637</td><td class="Bordered">Naming an on-page connector with the same name a component had when placed can mess up the reference descriptor.</td></tr>
+
+<tr><td class="Bordered">116671</td><td class="Bordered">Netlist report doesn't display the sections of multisection components.</td></tr>
+<tr><td class="Bordered">116675</td><td class="Bordered"> Changing net on hidden pin connection through spreadsheet causes prompt to rename all things on the net.</td></tr>
+<tr><td class="Bordered">116690</td><td class="Bordered">Find information can yield incorrect behaviour after deleting and placing components.</td></tr>
+<tr><td class="Bordered">116693</td><td class="Bordered">Cannot set hidden pin connections in spreadsheet.</td></tr>
+<tr><td class="Bordered">116695</td><td class="Bordered">Hidden pins become out of sync using the gate optimizer.</td></tr>
+<tr><td class="Bordered">116696</td><td class="Bordered">OPC connector names on multi-page not being updated.</td></tr>
+
+<tr><td class="Bordered">116712</td><td class="Bordered">Importing a ms10 circuit containing multi-section component does not work correctly in some cases.</td></tr>
+<tr><td class="Bordered">116716</td><td class="Bordered">Simulation settings not being imported correctly if set to disabled.</td></tr>
+<tr><td class="Bordered">116718</td><td class="Bordered">Undoing with subcircuits does not work as expected.</td></tr>
+<tr><td class="Bordered">116724</td><td class="Bordered"> Connecting a net with an existing onpage to a hidden pin will create a floating on-page connector and will not actually connect to the hidden pin.</td></tr>
+<tr><td class="Bordered">116726</td><td class="Bordered">Overwriting common hierarchical block on save when upgrading schematic crashes Multisim.</td></tr>
+<tr><td class="Bordered">116768</td><td class="Bordered">Search Fails In the Component Browser When Used From the Component Wizard.</td></tr>
+
+<tr><td class="Bordered">116771</td><td class="Bordered">Replace By Subcircuit Creates Unnecessary I/O Pins.</td></tr>
+<tr><td class="Bordered">116776</td><td class="Bordered">74LS11D IC has an error in symbol model mapping.</td></tr>
+<tr><td class="Bordered">116779</td><td class="Bordered">RefDes drops leading zeroes.</td></tr>
+<tr><td class="Bordered">116801</td><td class="Bordered">There is no prompt to save changes when exiting the Description box edit view.</td></tr>
+<tr><td class="Bordered">116805</td><td class="Bordered">Multiple sections of a multi-section component can have inconsistent refdes..</td></tr>
+<tr><td class="Bordered">116806</td><td class="Bordered">Different sections of a single component can be mistaken for two components by BOM.</td></tr>
+
+<tr><td class="Bordered">116807</td><td class="Bordered">Component properties are not synchronized properly when sections have different cases for refdes.</td></tr>
+<tr><td class="Bordered">116837</td><td class="Bordered">RefDes change is not backannotated if component is not present in any of the component databases.</td></tr>
+<tr><td class="Bordered">116845</td><td class="Bordered">Dragging selection disconnects bus wires.</td></tr>
+<tr><td class="Bordered">116846</td><td class="Bordered">Colour of nets in a locked schematic can still be modified.</td></tr>
+<tr><td class="Bordered">116856</td><td class="Bordered">The ~ symbol leading a net name causes the SPICE parser to fail.</td></tr>
+<tr><td class="Bordered">116867</td><td class="Bordered">Undo of any action on main design messes up refdeses of components inside subcircuit.</td></tr>
+
+<tr><td class="Bordered">116873</td><td class="Bordered">Hidden pin information gets wiped out after a refdes rename.</td></tr>
+<tr><td class="Bordered">116877</td><td class="Bordered">The controlled one shot negative edge trigger is broken.</td></tr>
+<tr><td class="Bordered">116881</td><td class="Bordered">Multisim crashes when deleting and editing a component in some cases.</td></tr>
+<tr><td class="Bordered">116901</td><td class="Bordered">Refdeses inside a subcircuit will reset when a part is removed that has a refdes partially matching the subcircuit's refdes.</td></tr>
+<tr><td class="Bordered">116911</td><td class="Bordered">Renaming multisection component RefDes to lower case can crash Multisim in some cases.</td></tr>
+<tr><td class="Bordered">116917</td><td class="Bordered">Refdes R1A in subcircuit gets renamed to R1A1 after undo action in top level design.</td></tr>
+
+<tr><td class="Bordered">116920</td><td class="Bordered">Connect pin to net difference getting lost after un-pair then re-pair of net in back annotation dialog.</td></tr>
+<tr><td class="Bordered">116928</td><td class="Bordered">Flipping a voltmeter or ammeter horizontally crashes when only one pin is connected.</td></tr>
+<tr><td class="Bordered">116939</td><td class="Bordered">Multisim crashes when you perform overlapping place actions via keyboard.</td></tr>
+<tr><td class="Bordered">116957</td><td class="Bordered">Back Annotation crashes Multisim in some cases after Rename/Renumber Components has been used.</td></tr>
+<tr><td class="Bordered">116959</td><td class="Bordered">Selection is kept after bus lines are deleted from the Bus Settings dialog.</td></tr>
+<tr><td class="Bordered">116995</td><td class="Bordered">Unable to change the sheet size of NI Elvis II Design.</td></tr>
+
+<tr><td class="Bordered">117003</td><td class="Bordered">Copy and paste of nested subcircuits inserts invalid refdes into refdes manager.</td></tr>
+<tr><td class="Bordered">117007</td><td class="Bordered">Power Factor reading from the watt meter is incorrect in some cases.</td></tr>
+<tr><td class="Bordered">117016</td><td class="Bordered">Possible application crash in some cases displaying the Database Manager.</td></tr>
+<tr><td class="Bordered">117036</td><td class="Bordered">ERC check is flagging NC pins as warning for unconnected pins.</td></tr>
+<tr><td class="Bordered">117054</td><td class="Bordered">Undoing a delete trace action in the grapher can crash Multisim.</td></tr>
+<tr><td class="Bordered">117065</td><td class="Bordered">Changing a setting in the function generator instrument during simulation inverts the duty cycle percentage.</td></tr>
+
+<tr><td class="Bordered">117075</td><td class="Bordered">RefDes Visibility setting is ignored for power source components.</td></tr>
+<tr><td class="Bordered">117083</td><td class="Bordered">Edited model is not refreshed if component properties dialog is not closed.</td></tr>
+<tr><td class="Bordered">117086</td><td class="Bordered">Warning message always been prompted even if AWG and Fgen instruments are not selected to be active.</td></tr>
+<tr><td class="Bordered">117091</td><td class="Bordered">Search does not work if item is previously entered in component field.</td></tr>
+<tr><td class="Bordered">117093</td><td class="Bordered">Hovering over an unselected design can incorrectly return focus on an instrument property dialog.</td></tr>
+<tr><td class="Bordered">117098</td><td class="Bordered">PLD HBs break the net link when used within another PLD Schematic.</td></tr>
+
+<tr><td class="Bordered">117099</td><td class="Bordered">Simulation crashes if you change the state of the D pins while the simulation is running.</td></tr>
+<tr><td class="Bordered">117111</td><td class="Bordered">Possible application crash while simulating in some cases using certain instruments.</td></tr>
+<tr><td class="Bordered">117193</td><td class="Bordered">Changing visibility settings for labels using design toolbox does not mark file as dirty..</td></tr>
+<tr><td class="Bordered">117201</td><td class="Bordered">AC plots from Monte-Carlo and Worst-Case mis-label the axies.</td></tr>
+<tr><td class="Bordered">117257</td><td class="Bordered">Hiding RefDes using sheet properties in a SC/HB removes the hierarchical connection information.</td></tr>
+<tr><td class="Bordered">117272</td><td class="Bordered">Nets through probes fail if the wires overlap in some cases.</td></tr>
+
+<tr><td class="Bordered">117273</td><td class="Bordered">Printing a PLD design crashes Multisim in some cases.</td></tr>
+<tr><td class="Bordered">117274</td><td class="Bordered">Component renumber does not respects page ordering.</td></tr>
+<tr><td class="Bordered">117336</td><td class="Bordered">Multi-page schematics should print in the order which they appear in the Design Toolbox.</td></tr>
+<tr><td class="Bordered">117379</td><td class="Bordered">Copy and paste of line loses grid snap.</td></tr>
+<tr><td class="Bordered">117392</td><td class="Bordered">Creating a new PLD will allow creating a PLD with an invalid name if the name ends with \.</td></tr>
+<tr><td class="Bordered">117410</td><td class="Bordered">Reordering the sheets doesn't change the sheet numbers in title blocks.</td></tr>
+
+<tr><td class="Bordered">117586</td><td class="Bordered">ADA4841-1YRZ causes an internal simulation error.</td></tr>
+<tr><td class="Bordered">117610</td><td class="Bordered">Clicking cancel on the Variant Manager can crash Multisim in some cases.</td></tr>
+<tr><td class="Bordered">117635</td><td class="Bordered">The models for 74LS393N and 74LS393D are incorrect.</td></tr>
+<tr><td class="Bordered">117666</td><td class="Bordered">Performing Worst case analysis can crash Multisim in some cases.</td></tr>
+<tr><td class="Bordered">117880</td><td class="Bordered">ENERGIZING_COIL Is Not Energizing the NC_CONTACT and NO_CONTACT.</td></tr>
+
+<tr><td class="Bordered">117534</td><td class="Bordered">Title Block Title Field Resets to File Name After Undo.</td></tr>
+<tr><td class="Bordered">117838</td><td class="Bordered">Changing the net color using the Net properties dialog temporarily shows a blank color box.</td></tr>
+<tr><td class="Bordered">117901</td><td class="Bordered">X is not placed on common pin of multisection component that is connected to a net after running a gate optimize operation.</td></tr>
+<tr><td class="Bordered">117790</td><td class="Bordered">Digital_Frequency_Divider causes netlist error.</td></tr>
+
+<tr><td class="Bordered" colspan="2"><strong>Ultiboard ( 53 ) </strong></td></tr>
+
+<tr><td class="Bordered">115709</td><td class="Bordered">Importing an Orcad max file will make the component refdes a part of the footprint's name.</td></tr>
+<tr><td class="Bordered">116445</td><td class="Bordered">Gate optimizer does not work for components with custom section names.</td></tr>
+
+<tr><td class="Bordered">112465</td><td class="Bordered">Trace width are different in Ultiboard Nets Spreadsheet and Net Edit dialog.</td></tr>
+<tr><td class="Bordered">112691</td><td class="Bordered">Copying and pasting a pad into the 'Custom Pad shape edit mode' does not allow you to save the shape.</td></tr>
+<tr><td class="Bordered">114327</td><td class="Bordered">Deleting Open Trace Ends Causes Ultiboard to Hang in some cases.</td></tr>
+<tr><td class="Bordered">114366</td><td class="Bordered">Ultiboard does not refresh preview box if selection is made in the spreadsheet view using keyboard.</td></tr>
+<tr><td class="Bordered">114375</td><td class="Bordered">Gerber doesn't export the pad copper ring correctly.</td></tr>
+<tr><td class="Bordered">114545</td><td class="Bordered">Clicking on Lock button toggles locked status in multiple selection situation.</td></tr>
+<tr><td class="Bordered">114582</td><td class="Bordered">Locked button status does not reflect selection for Parts tab.</td></tr>
+
+<tr><td class="Bordered">114608</td><td class="Bordered">Duplicate D-codes permitted when entering values through keyboard.</td></tr>
+<tr><td class="Bordered">114618</td><td class="Bordered">Circles with a wide thickness are expanded in the Gerber file.</td></tr>
+<tr><td class="Bordered">114875</td><td class="Bordered">Removing a net from a net group will revert Max via count to 2147483647.</td></tr>
+<tr><td class="Bordered">115058</td><td class="Bordered">It is possible to enter invalid clearances in the group editor.</td></tr>
+<tr><td class="Bordered">115060</td><td class="Bordered">Group editor component spacing values are not validated.</td></tr>
+<tr><td class="Bordered">115100</td><td class="Bordered">Aperture mapping list should be sortable.</td></tr>
+
+<tr><td class="Bordered">115174</td><td class="Bordered">Dialog should check for valid values when assinging D-Codes.</td></tr>
+<tr><td class="Bordered">115275</td><td class="Bordered">Pin layer properties are not preserved when component changes board side.</td></tr>
+<tr><td class="Bordered">115321</td><td class="Bordered">SVG doesn't export the pad copper ring correctly - layer settings are ignored.</td></tr>
+<tr><td class="Bordered">115370</td><td class="Bordered">Part spacing DRC error indicator can be misleading sometimes.</td></tr>
+<tr><td class="Bordered">115476</td><td class="Bordered">Ultiboard allows for duplicate category names in its database tree.</td></tr>
+<tr><td class="Bordered">115670</td><td class="Bordered">Closing an unsaved design will close immediately and then prompt to save.</td></tr>
+
+<tr><td class="Bordered">115671</td><td class="Bordered">Bus group drc message is cryptic.</td></tr>
+<tr><td class="Bordered">115674</td><td class="Bordered">DRC errors appear inconsistently for overlapping parts.</td></tr>
+<tr><td class="Bordered">115687</td><td class="Bordered">Pin and gate swapping should not use use group settings if the part is not in a group.</td></tr>
+<tr><td class="Bordered">115691</td><td class="Bordered">Right clicking on checkbox for visibility shows context menu for wrong layer.</td></tr>
+<tr><td class="Bordered">115719</td><td class="Bordered">Ruler bars disappear after exiting from full screen mode.</td></tr>
+<tr><td class="Bordered">115737</td><td class="Bordered">Dialog box title keeps counting up after placing board outline with multiple connectors.</td></tr>
+
+<tr><td class="Bordered">115948</td><td class="Bordered">Ultiboard crashes when opening the 3D View in some cases.</td></tr>
+<tr><td class="Bordered">116373</td><td class="Bordered">Imported OrCAD File does not have Silkscreen Information.</td></tr>
+<tr><td class="Bordered">116374</td><td class="Bordered">When connecting traces to vias the Assume Net field is empty in some cases.</td></tr>
+<tr><td class="Bordered">116532</td><td class="Bordered">Changes made to text objects after Apply button is used doesn't get made.</td></tr>
+<tr><td class="Bordered">116549</td><td class="Bordered">Changing RefDes for multi-section components in MS after a gate swap in UB does not properly update net connections.</td></tr>
+<tr><td class="Bordered">116667</td><td class="Bordered">Crash exporting to NC drill while doing in-place part edit.</td></tr>
+
+<tr><td class="Bordered">116750</td><td class="Bordered">Crash showing properties of a via placed in a CAD design.</td></tr>
+<tr><td class="Bordered">116824</td><td class="Bordered">Ultiboard does not respond when moving a component attached to overlapping vias.</td></tr>
+<tr><td class="Bordered">116857</td><td class="Bordered">Selection filters not correctly saved in Ultiboard.</td></tr>
+<tr><td class="Bordered">116874</td><td class="Bordered">Thermal relief settings for copper areas are inverted.</td></tr>
+<tr><td class="Bordered">116896</td><td class="Bordered">False positive when you separate out net and footprint change.</td></tr>
+<tr><td class="Bordered">116910</td><td class="Bordered">Placing a hole causes the DXF export to generate a large file.</td></tr>
+
+<tr><td class="Bordered">116929</td><td class="Bordered">Reference point on land patterns changes when being edited.</td></tr>
+<tr><td class="Bordered">116933</td><td class="Bordered">TRIKO301812 has silkscreen overlapping pad.</td></tr>
+<tr><td class="Bordered">116944</td><td class="Bordered">Editing a custom pad while placing a part crashes Ultiboard.</td></tr>
+<tr><td class="Bordered">116966</td><td class="Bordered">Ultiboard can become unresponsive while trying to open certain designs.</td></tr>
+<tr><td class="Bordered">117002</td><td class="Bordered">Parts without silkscreen are impervious to part shoving.</td></tr>
+<tr><td class="Bordered">117033</td><td class="Bordered">Ultiboard crashes when closing an open design in some cases.</td></tr>
+
+<tr><td class="Bordered">117067</td><td class="Bordered">Silkscreen text not selectable if copper top is grayed out.</td></tr>
+<tr><td class="Bordered">117100</td><td class="Bordered">Voiding is not being performed between copper area connected to net and copper area not connected to net.</td></tr>
+<tr><td class="Bordered">117173</td><td class="Bordered">Enter Coordinate dialog crashes when it looses focus and user clicks OK.</td></tr>
+<tr><td class="Bordered">117453</td><td class="Bordered">Invoking board wizard after placing a test point crashes Ultiboard.</td></tr>
+<tr><td class="Bordered">117467</td><td class="Bordered">Multisim and Ultiboard does not asks to Save work before closing when shutting down the computer.</td></tr>
+<tr><td class="Bordered">117479</td><td class="Bordered">Wrong part is set for delete when forward annotating in some cases.</td></tr>
+
+<tr><td class="Bordered">117560</td><td class="Bordered">Forward annotating an UltiCap file can crash Ultiboard in some cases.</td></tr>
+<tr><td class="Bordered">117719</td><td class="Bordered">Back annotation wiring fails after manual pairing two resistors.</td></tr>
+</span>
+</table>
+<br/>
+
+<p class="Body">In der folgenden Tabelle werden die wichtigsten Probleme mit der Circuit Design Suite 11.0.1 beschrieben, die in 11.0.2 behoben wurden.</p>
+<span class="DNL">
+<table class="Bordered">
+<tr><td class="Bordered" colspan="2"><strong>Multisim ( 16 ) </strong></td></tr>
+<tr><th class="Bordered">Bug ID</th><th class="Bordered">Description</th></tr>
+<tr><td class="Bordered">274360</td><td class="Bordered">Datasheet link for AD8698ARM is incorrect.</td></tr>
+<tr><td class="Bordered">275547</td><td class="Bordered">Lengthening a bus causes connected wires to lose the bus entry node.</td></tr>
+<tr><td class="Bordered">275663</td><td class="Bordered">Inconsistent component symbols causing bad boards.</td></tr>
+<tr><td class="Bordered">275692</td><td class="Bordered">Grapher View Corrupting Cursor Data When In Print Preview Or Printing.</td></tr>
+<tr><td class="Bordered">277619</td><td class="Bordered">BC807 and BC817 Symbol To Footprint Mapping May Be Incorrect.</td></tr>
+<tr><td class="Bordered">277720</td><td class="Bordered">OPA340PA and OPA340UA Symbol and Footprint Mapping Error Pins 6 and 7 Are Swapped.</td></tr>
+<tr><td class="Bordered">279104</td><td class="Bordered">Component 1B4B42 Bridge Rectifier Has Wrong Footprint Mapping And Has Limited Simulation capabilities.</td></tr>
+<tr><td class="Bordered">279151</td><td class="Bordered">Selecting To Edit The Symbol In This File Causes The Part To Change Position.</td></tr>
+<tr><td class="Bordered">282251</td><td class="Bordered">LM324AN maps to incorrect land patterns for all manufacturers.</td></tr>
+<tr><td class="Bordered">282415</td><td class="Bordered">Local File System Hyperlinks Not Working in Multsim 11.0.1.</td></tr>
+<tr><td class="Bordered">282519</td><td class="Bordered">Components REF01 and REF02 are missing the "TEMP" pin.</td></tr>
+<tr><td class="Bordered">284506</td><td class="Bordered">The option to connect Analog to Digital ground when exporting to Ultiboard behaves inconsistently.</td></tr>
+<tr><td class="Bordered">285737</td><td class="Bordered">Changing net color from the spreadsheet can crash Multisim.</td></tr>
+<tr><td class="Bordered">286304</td><td class="Bordered">Pins are swapped when exporting to Ultiboard even though schematic appears OK.</td></tr>
+<tr><td class="Bordered">287436</td><td class="Bordered">NUD3160DMT1 and NUD3160LT1 should have the same single section model.</td></tr>
+<tr><td class="Bordered">282888</td><td class="Bordered">The image returned by the Multisim Automation API method GetCircuitImage () does not contain the correct component refdes' in some cases.</td></tr>
+<tr><td class="Bordered" colspan="2"><strong>Ultiboard ( 4 ) </strong></td></tr>
+<tr><td class="Bordered">275662</td><td class="Bordered">Trying to complete traces in this file causes Ultiboard to become unresponsive in some cases..</td></tr>
+<tr><td class="Bordered">279148</td><td class="Bordered">Merge Polygons Is Severely Corrupting The Gerber Export.</td></tr>
+<tr><td class="Bordered">280216</td><td class="Bordered">Ultiboard crashed randomly when moving a component.</td></tr>
+<tr><td class="Bordered">285491</td><td class="Bordered">Similar parts appear on different rows when exporting the BOM in Ultiboard.</td></tr>
+</span>
+</table>
+<br/>
+
+<h2><a id="newcomponents">Neue Bauelemente</a></h2>
+<p class="Body">Multisim 11.0.1 enth&auml;lt folgende neue Bauelemente: 
+<ul>
+<li>38 Bauelemente von Analog Devices</li>
+</ul>
+</p>
+<div style="text-align: center">
+<table class="Bordered">
+<span class="DNL">
+<tr><td class="Bordered" colspan="8"><strong>Analog Devices</strong></td></tr>
+<tr>
+<td style="width:100px" class="Bordered">AD737AN</td>
+<td style="width:100px" class="Bordered">ADA4817-1ARDZ</td>
+<td style="width:100px" class="Bordered">AD827JR-16</td>
+<td style="width:100px" class="Bordered">AD736AR</td>
+<td style="width:100px" class="Bordered">AD736AQ</td>
+<td style="width:100px" class="Bordered">AD825AR-16</td>
+<td style="width:100px" class="Bordered">AD737BQ</td>
+<td style="width:100px" class="Bordered">AD737AR</td>
+</tr>
+<tr>
+<td style="width:100px" class="Bordered">AD8016ARB</td>
+<td style="width:100px" class="Bordered">AD8675ARMZ</td>
+<td style="width:100px" class="Bordered">AD8504ARUZ</td>
+<td style="width:100px" class="Bordered">AD8304ARU</td>
+<td style="width:100px" class="Bordered">ADA4937-1YCPZ-R2</td>
+<td style="width:100px" class="Bordered">AD8397ARZ</td>
+<td style="width:100px" class="Bordered">AD8397ARDZ</td>
+<td style="width:100px" class="Bordered">ADA4817-1ACPZ-R2</td>
+</tr>
+<tr>
+<td style="width:100px" class="Bordered">AD8667ARZ</td>
+<td style="width:100px" class="Bordered">AD8667ARMZ</td>
+<td style="width:100px" class="Bordered">AD8675ARZ</td>
+<td style="width:100px" class="Bordered">ADA4858-3ACPZ-R2</td>
+<td style="width:100px" class="Bordered">AD8133ACP-R2</td>
+<td style="width:100px" class="Bordered">ADA4939-2YCPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4855-3YCPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4817-2ACPZ-R2</td>
+</tr>
+<tr>
+<td style="width:100px" class="Bordered">ADA4939-1YCPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4932-2YCPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4932-1YCPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4937-2YCPZ-R2</td>
+<td style="width:100px" class="Bordered">AD8148ACPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4853-3YCPZ-R2</td>
+<td style="width:100px" class="Bordered">AD8541ARZ</td>
+<td style="width:100px" class="Bordered">AD736JNZ</td>
+</tr>
+<tr>
+<td style="width:100px" class="Bordered">ADA4853-2YCPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4853-1AKSZ-R2</td>
+<td style="width:100px" class="Bordered">AD8146ACPZ-R2</td>
+<td style="width:100px" class="Bordered">AD8147ACPZ-R2</td>
+<td style="width:100px" class="Bordered">ADA4853-3YRUZ</td>
+<td style="width:100px" class="Bordered">AD8145YCPZ-R2</td>
+<td></td>
+</tr>
+</span>
+</table>
+</div>
+<hr />
+<h3>Copyright</h3>
+<p class="Body">&copy; 2011 National Instruments Corporation. Alle Rechte vorbehalten.</p>
+
+<p class="Body">Gem&auml;&szlig; den Bestimmungen des Urheberrechts darf diese Publikation ohne vorherige schriftliche Zustimmung der Firma National Instruments Corporation weder vollst&auml;ndig noch teilweise vervielf&auml;ltigt oder verbreitet werden, gleich in welcher Form, ob elektronisch oder mechanisch. Das Verbot erfasst u. a. das Fotokopieren, das Aufzeichnen, das Speichern von Informationen in Informationsgewinnungssystemen sowie das Anfertigen von &Uuml;bersetzungen gleich welcher Art.</p>
+
+<h3>Marken</h3>
+
+<p class="Body">National Instruments, NI, <span class="monospace">ni.com</span> und LabVIEW sind Marken der Firma National Instruments Corporation. Electronics Workbench, Multisim und Ultiboard sind Marken von National Instruments. Im Abschnitt <em>Terms of Use</em> unter <span id="Span5">ni.com/legal</span> finden Sie n&auml;here Informationen zu den <a href="http://digital.ni.com/express.nsf/express?openagent&amp;code=rdtrad">Marken von National Instruments</a>.</p>
+
+<p class="Body">Sonstige hierin erw&auml;hnte Produkt- und Firmenbezeichnungen sind Marken oder Handelsnamen der jeweiligen Unternehmen.</p>
+
+<p class="Body">Das in dieser Software verwendete EKV-MOST-Modell wurde vom Electronics Laboratory (LEG) des Swiss Federal Institute of Technology (EPFL) entwickelt, implementiert und getestet.</p>
+
+<h3>Patente</h3>
+
+<p class="Body">N&auml;here Informationen &uuml;ber den Patentschutz von Produkten/Technologien von National Instruments finden Sie unter <strong>Hilfe&raquo;Patente</strong> in Ihrer Software, in der Datei <span class="Monospace">patents.txt</span> auf Ihrem Datentr&auml;ger oder in der &quot;National Instruments Patent Notice&quot; auf der Website <a href="http://www.ni.com/patents" target="_blank">ni.com/patents</a>.</p>
+
+
+</body>
+</html>
+
+
+
+

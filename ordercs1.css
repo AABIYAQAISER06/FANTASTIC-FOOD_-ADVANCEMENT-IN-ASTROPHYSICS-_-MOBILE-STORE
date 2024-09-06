@@ -1,0 +1,21 @@
+body{
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    float: left;
+    padding: 20px;
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+  /*.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }*/

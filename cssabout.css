@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 20fr 1fr;
+    column-gap: 30px;
+   }
+   h1{
+    font-size: 70px;
+   }
+img{
+   border-radius: 100%;
+   align-items: end;
+   width: 230px;
+   border-color: white;
+   border-style: solid;
+   border-width: thick;
+}
+p{
+font-size: 19px;
+}
+
